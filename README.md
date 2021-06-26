@@ -6,7 +6,7 @@ Se puede trabajar el HTML con cualquier editor de codigo, desde el bloc de notas
 
 El primer archivo de HTML aiempre tiene que llamarse "index.html" porque es lo primero que detectan los navegadores.
 
-´´´html
+´´´ html
 <!doctype html>
 <!-- DOCTYPE = Se trata de una etiqueta que no necesita cierre y cuya función es facilitar información al servidor web que aloja página. La información facilitada por ésta etiqueta se refiere al tipo de documento, además es necesaria para la comunicación entre el navegador y el servidor.-->
 <html>
