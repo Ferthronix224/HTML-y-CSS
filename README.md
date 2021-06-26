@@ -29,15 +29,15 @@ El primer archivo de HTML aiempre tiene que llamarse "index.html" porque es lo p
 <!doctype html>
 <html>
 <head>
-	<!-- meta = La función de meta viene siendo añadir información sobre la página-->
+	<!-- meta: La función de meta viene siendo añadir información sobre la página-->
 	<meta charset = "utf-8">
 	<!-- charset: Viene siendo la configuración en la página para definir el idioma que se usará.-->
 	<meta name = "Author" content = "Fernando Adolfo">
 	<!-- name: Tiene varias propiedades diferentes que dependiendo de lo que esta adentro es lo que se estará definiendo. Y el name va acompañado de "content" que ahí es donde tenemos que poner el contenido de lo que se definió en el name. En este ejemplo en la etiqueta simple "meta name" estamos poniendo el autor y el nombre del autor.-->
 	<meta name = "Description" content = "Esta es la forma correcta de hacer páginas web">
-	<!-- Description en la etiqueta simple "meta name" es la descripción que aparecerá en los navegadores.-->
+	<!-- Description: En la etiqueta simple "meta name" es la descripción que aparecerá en los navegadores.-->
 	<meta name = "Keywords" content = "html, desarrollo web">
-	<!-- Keywords en la etiqueta simple "meta name" son las palabras clave que usan los navegadores para filtrar las paginas-->
+	<!-- Keywords: En la etiqueta simple "meta name" son las palabras clave que usan los navegadores para filtrar las paginas-->
 	<title>Mi primera página web</title>
 	<!-- La etiqueta doble "title" es donde escribimos el nombre de la página-->
 	<link rel="icon" href="img/noun_html_2350456.png">
