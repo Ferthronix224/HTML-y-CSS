@@ -83,7 +83,8 @@ En la imagen se ve un buen diseño para una página web.
 	
 	<a href="">Vínculo</a>
 </body>
-</html>```
+</html>
+```
 
 En la parte anterior la etiqueta doble "b" es para poner en negritas las letras.  
 La etiqueta simple "br"es para hacer un salto de línea.  
