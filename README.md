@@ -52,4 +52,41 @@ El primer archivo de HTML aiempre tiene que llamarse "index.html" porque es lo p
 <img src = "https://user-images.githubusercontent.com/67721157/123534321-ff0d9d00-d6e1-11eb-9158-a8a095139105.png" width = "600" height = "350" alt = "ejemplo" align = "center" />
 
 En la imagen se ve un buen diseño para una página web.
+
+## Cuerpo
+```html
+<!doctype html>
+<html>
+<head>
+</head>
+
+<body>
+	<header>Cabezote</header>
+	
+	<nav>Barra de navegación</nav>
+	
+	<section>Sección principal</section>
+	
+	<aside>Columna</aside>
+	
+	<article>Artículo</article>
+	
+	<h1>Título</h1>
+	<h2>Título</h2>
+	<h3>Título</h3>
+	<h4>Título</h4>
+	<h5>Título</h5>
+	<h6>Título</h6>
+	
+	<p>Esto es un <b>párrafo.</b><br>Esto es otro párrafo.</p>
+	
+	<hr>
+	
+	<a href="">Vínculo</a>
+</body>
+</html>```
+
+En la parte anterior la etiqueta doble "b" es para poner en negritas las letras.  
+La etiqueta simple "br"es para hacer un salto de línea.  
+La etiqueta simple "hr" es para poner un borde.
 # CSS
