@@ -48,7 +48,6 @@ El primer archivo de HTML aiempre tiene que llamarse "index.html" porque es lo p
 </body>
 </html>
 ```
-![Imagen1](https://user-images.githubusercontent.com/67721157/123534321-ff0d9d00-d6e1-11eb-9158-a8a095139105.png)
 <img src = "https://user-images.githubusercontent.com/67721157/123534321-ff0d9d00-d6e1-11eb-9158-a8a095139105.png" width = "600" height = "350" alt = "ejemplo" align = "center" />
 
 En la imagen se ve un buen diseño para una página web.
