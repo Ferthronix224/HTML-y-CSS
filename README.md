@@ -89,4 +89,55 @@ En la imagen se ve un buen diseño para una página web.
 En la parte anterior la etiqueta doble "b" es para poner en negritas las letras.  
 La etiqueta simple "br"es para hacer un salto de línea.  
 La etiqueta simple "hr" es para poner un borde.
+
+```html
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Mi primera página</title>
+</head>
+
+<body>
+	<img src="img/imagen.jpg" width = "600" height = "350" align = "center">
+<!--img es la etiqueta para insertar imágenes, con src (source) buscas el link o la ubicación de las imágenes para insertarlas, con width pones elancho, con height el alto y aligh la posicion-->	
+	<ol>
+		<li>Carro</li>
+		<li>Barco</li>
+		<li>Avion</li>
+	</ol>
+	<!--Con ol haces una lista númerica-->
+	<ul>
+		<li>Carro</li>
+		<li>Barco</li>
+		<li>Avion</li>
+	</ul>
+	
+	<table border="1">
+		<tr>
+			<th>Mes</th>
+			<th>Ahorro</th>
+		</tr>
+		
+		<tr>
+			<th>Enero</th>
+			<th>$100</th>
+		</tr>
+		
+		<tr>
+			<th>Febrero</th>
+			<th>$200</th>
+		</tr>
+	</table>
+	
+	<h1>Resultados del examen</h1>
+	<p>Fernando: <meter value = "90" min = "0" max = "100" high = "70"></meter></p>
+	<p>Adolfo: <meter value = "69" min = "0" max = "100" high = "70"></meter></p>
+	<p>Uriel: <meter value = "40" min = "0" max = "100" high = "70"></meter></p>
+	<p>Johan: <meter value = "85" min = "0" max = "100" high = "70"></meter></p>
+	
+	<footer>Este es el pie de página</footer>
+</body>
+</html>
+```
 # CSS
