@@ -106,18 +106,20 @@ La etiqueta simple "hr" es para poner un borde.
 		<li>Barco</li>
 		<li>Avion</li>
 	</ol>
-	<!--Con ol haces una lista númerica-->
+	<!--ol es la etiqueta doble con la que haces una lista númerica-->
+	<!--li es la etiqueta doble con la que pones items en la lista-->
 	<ul>
 		<li>Carro</li>
 		<li>Barco</li>
 		<li>Avion</li>
 	</ul>
+	<!--ul es la etiqueta doble con la que haces una lista de puntos-->
 	
 	<table border="1">
 		<tr>
 			<th>Mes</th>
-			<th>Ahorro</th>
-		</tr>
+			<th>Ahorro</th> <!--th es la etiqueta doble donde pones el valor de una columna-->
+		</tr> <!--tr es la etiqueta doble donde declaras una fila-->
 		
 		<tr>
 			<th>Enero</th>
@@ -128,15 +130,15 @@ La etiqueta simple "hr" es para poner un borde.
 			<th>Febrero</th>
 			<th>$200</th>
 		</tr>
-	</table>
+	</table> <!--table es la etiqueta doble con la que declaras una tabla despues puedes ponerle borde con "border="1" dentro de la misma etiqueta de inicio"-->
 	
 	<h1>Resultados del examen</h1>
 	<p>Fernando: <meter value = "90" min = "0" max = "100" high = "70"></meter></p>
 	<p>Adolfo: <meter value = "69" min = "0" max = "100" high = "70"></meter></p>
 	<p>Uriel: <meter value = "40" min = "0" max = "100" high = "70"></meter></p>
-	<p>Johan: <meter value = "85" min = "0" max = "100" high = "70"></meter></p>
+	<p>Johan: <meter value = "85" min = "0" max = "100" high = "70"></meter></p><!--meter es la etiqueta doble para poner una barra de progreso, en "value" pones el valor, en "min" pones el valor mínimo de los valores posibles, en "max" pones el valor máximo de esos valores, en "high" pones un valor donde pones un limite que por ejemplo si fueran calificaciones el valor limite para pasar es de 70 para arriba-->
 	
-	<footer>Este es el pie de página</footer>
+	<footer>Este es el pie de página</footer> <!--footer viene siendo el pie de página-->
 </body>
 </html>
 ```
