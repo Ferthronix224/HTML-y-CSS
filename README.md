@@ -7,7 +7,7 @@ Se puede trabajar el HTML con cualquier editor de codigo, desde el bloc de notas
 El primer archivo de HTML siempre tiene que llamarse "index.html" porque es lo primero que detectan los navegadores.
 ## Estructura  
 **doctype:** Se trata de una etiqueta simple que no necesita cierre y cuya función es facilitar información al servidor web que aloja la página. La información facilitada por ésta etiqueta se refiere al tipo de documento, además es necesaria para la comunicación entre el navegador y el servidor.  
-**html:** Se trata de una etiqueta par y es la etiqueta que encierra todo el documento HTML.
+**html:** Se trata de una etiqueta par y es la etiqueta que encierra todo el documento HTML.  
 **head:** Es una etiqueta par, define la cabecera del documento y contiene información del mismo (metadatos, scripts, estilos, ubicación de documentos de estilos, título de la pagina entre otros datos).  
 **body:** Es una etiqueta par y la conocemos como el cuerpo del sitio web. Todo lo que se escriba dentro de esta etiqueta será visible para los navegadores.
 ```html
