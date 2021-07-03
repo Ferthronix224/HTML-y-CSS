@@ -157,4 +157,74 @@ Las etiquetas dobles "footer" son para poner el pie de página.
 </body>
 </html>
 ```
+
+**figure:** Etiqueta doble que sirve para estructurar mejor en la maquetacion las imagenes que pongamos en nuestro documento.  
+**figcaption: ** Etiqueta doble que sirve para ponerle descripción a las imagenes.  
+**thead:** Etiqueta doble que se pone en las tablas para indicar que fila es la cabecera.  
+**tbody:** Etiqueta doble que se pone en las tablas para indicar que filas son el cuerpo. Y una cosa que hay que tener en cuenta es que las columnas en el cuerpo se hace con la etiqueta doble **td**.  
+
+```html
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Mi primera página</title>
+</head>
+
+<body>
+	<figure>
+	<img src="img/imagen.jpg" width = "600" height = "350" alt="" align = "center">
+	</figure>
+	<figcaption>Descripción de la imagen</figcaption>
+	<ol>
+		<li>Carro</li>
+		<li>Barco</li>
+		<li>Avion</li>
+	</ol>
+	
+	<ul>
+		<li>Carro</li>
+		<li>Barco</li>
+		<li>Avion</li>
+	</ul>
+	
+	<table border="1">
+		<thead>
+			<tr>
+				<th>Mes</th>
+				<th>Ahorro</th>
+			</tr>
+		</thead>
+		
+		<tbody>
+			<tr>
+				<td>Enero</td>
+				<td>$100</td>
+			</tr>
+
+			<tr>
+				<td>Febrero</td>
+				<td>$200</td>
+			</tr>
+		</tbody>			
+	</table>
+	
+	<h1>Resultados del examen</h1>
+	<p>Fernando: <meter value = "90" min = "0" max = "100" high = "70"></meter></p>
+	<p>Adolfo: <meter value = "69" min = "0" max = "100" high = "70"></meter></p>
+	<p>Uriel: <meter value = "40" min = "0" max = "100" high = "70"></meter></p>
+	<p>Johan: <meter value = "85" min = "0" max = "100" high = "70"></meter></p>
+	
+	<h2>Resultados de ventas</h2>
+	<p>Febrero: <progress value = "70" min = "0" max = "100"></progress></p>
+	<p>Marzo: <progress value = "80" min = "0" max = "100"></progress></p>
+	<p>Abril: <progress value = "90" min = "0" max = "100"></progress></p>
+	<p>Mayo: <progress value = "100" min = "0" max = "100"></progress></p>
+	
+	<footer>Este es el pie de página</footer>
+</body>
+</html>
+```
+
+
 # CSS
