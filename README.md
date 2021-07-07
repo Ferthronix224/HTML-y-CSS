@@ -267,4 +267,21 @@ En el video se puede observar que estan los mismos atributos que audio sólo que
 </html>
 ```
 
+# Etiquetas de Medios  
+
+Nos va a permitir insertar o incrustar documentos HTML, un vídeo en línea, un mapa, un reproductor de sonido en línea, entre otros elementos dentro del documento HTML5 principal.  
+
+
+```html
+<!doctype html>
+<html>
+<head>
+</head>
+
+<body>
+  <iframe src="https://www.youtube.com/embed/gWBYrwyQxIM" width="500" height="300" frameborder = "0" allowfullscreen></iframe>
+</body>
+</html>
+```
+
 # CSS
