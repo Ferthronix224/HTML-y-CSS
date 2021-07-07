@@ -19,7 +19,7 @@ El primer archivo de HTML siempre tiene que llamarse "index.html" porque es lo p
 </head>
 
 <body>
-	
+
 </body>
 </html>
 ```
@@ -37,7 +37,7 @@ La etiqueta simple "link" sirve para vincular hojas de estilo o vincular el icon
 <head>
 	<meta charset = "utf-8">
 	<meta name = "Author" content = "Fernando Adolfo">
-	<meta name = "Description" content = "Esta es la forma correcta de hacer páginas web">	
+	<meta name = "Description" content = "Esta es la forma correcta de hacer páginas web">
 	<meta name = "Keywords" content = "html, desarrollo web">
 	<title>Mi primera página web</title>
 	<link rel="icon" href="img/noun_html_2350456.png">
@@ -73,26 +73,26 @@ Las etiquetas dobles "a" son para poner un link;  pones "href = "" " y en las co
 
 <body>
 	<header></header>
-	
+
 	<nav></nav>
-	
+
 	<section></section>
-	
+
 	<aside></aside>
-	
+
 	<article></article>
-	
+
 	<h1>Título</h1>
 	<h2>Título</h2>
 	<h3>Título</h3>
 	<h4>Título</h4>
 	<h5>Título</h5>
 	<h6>Título</h6>
-	
+
 	<p>Esto es un <b>párrafo.</b><br>Esto es otro párrafo.</p>
-	
+
 	<hr>
-	
+
 	<a href="">Vínculo</a>
 </body>
 </html>
@@ -117,42 +117,42 @@ Las etiquetas dobles "footer" son para poner el pie de página.
 
 <body>
 	<img src="img/imagen.jpg" width = "600" alt = ""height = "350" align = "center">
-	
+
 	<ol>
 		<li>Carro</li>
 		<li>Barco</li>
 		<li>Avion</li>
 	</ol>
-	
+
 	<ul>
 		<li>Carro</li>
 		<li>Barco</li>
 		<li>Avion</li>
 	</ul>
-	
+
 	<table border="1">
 		<tr>
 			<th>Mes</th>
 			<th>Ahorro</th>
 		</tr>
-		
+
 		<tr>
 			<th>Enero</th>
 			<th>$100</th>
 		</tr>
-		
+
 		<tr>
 			<th>Febrero</th>
 			<th>$200</th>
 		</tr>
 	</table>
-	
+
 	<h1>Resultados del examen</h1>
 	<p>Fernando: <meter value = "90" min = "0" max = "100" high = "70"></meter></p>
 	<p>Adolfo: <meter value = "69" min = "0" max = "100" high = "70"></meter></p>
 	<p>Uriel: <meter value = "40" min = "0" max = "100" high = "70"></meter></p>
 	<p>Johan: <meter value = "85" min = "0" max = "100" high = "70"></meter></p>
-	
+
 	<footer>Este es el pie de página</footer>
 </body>
 </html>
@@ -181,13 +181,13 @@ Las etiquetas dobles "footer" son para poner el pie de página.
 		<li>Barco</li>
 		<li>Avion</li>
 	</ol>
-	
+
 	<ul>
 		<li>Carro</li>
 		<li>Barco</li>
 		<li>Avion</li>
 	</ul>
-	
+
 	<table border="1">
 		<thead>
 			<tr>
@@ -195,7 +195,7 @@ Las etiquetas dobles "footer" son para poner el pie de página.
 				<th>Ahorro</th>
 			</tr>
 		</thead>
-		
+
 		<tbody>
 			<tr>
 				<td>Enero</td>
@@ -208,23 +208,63 @@ Las etiquetas dobles "footer" son para poner el pie de página.
 			</tr>
 		</tbody>			
 	</table>
-	
+
 	<h1>Resultados del examen</h1>
 	<p>Fernando: <meter value = "90" min = "0" max = "100" high = "70"></meter></p>
 	<p>Adolfo: <meter value = "69" min = "0" max = "100" high = "70"></meter></p>
 	<p>Uriel: <meter value = "40" min = "0" max = "100" high = "70"></meter></p>
 	<p>Johan: <meter value = "85" min = "0" max = "100" high = "70"></meter></p>
-	
+
 	<h2>Resultados de ventas</h2>
 	<p>Febrero: <progress value = "70" min = "0" max = "100"></progress></p>
 	<p>Marzo: <progress value = "80" min = "0" max = "100"></progress></p>
 	<p>Abril: <progress value = "90" min = "0" max = "100"></progress></p>
 	<p>Mayo: <progress value = "100" min = "0" max = "100"></progress></p>
-	
+
 	<footer>Este es el pie de página</footer>
 </body>
 </html>
 ```
+# Audio  
 
+Para poner un audio se pone la etiqueta de audio y adentro se pone "autoplay, controls, loop y preload".  
+
+```html
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Audio</title>
+</head>
+
+<body>
+	<audio autoplay controls loop preload="auto">
+	<!--Ogg MORBIS .ogg-->
+	<!--MP3 .mp3-->
+	<!--WAV .wav-->
+	<!--ACC .m4a, .m4b, .m4p, .mp4, .acc-->
+
+		<source src="audio/Fall Out Boy - Thnks Fr Th Mmrs (subtitulada al español)(MP3_128K).mp3">
+	</audio>
+</body>
+</html>
+```
+# Video  
+
+En el video se puede observar que estan los mismos atributos que audio sólo que aqui podemos personalizar el ancho y alto del video.  
+
+```html
+<!doctype html>
+<html>
+<head>
+</head>
+
+<body>
+  <video autoplay controls loop width="500" height="200">
+    <source src= "video/Fall Out Boy - Thnks fr th Mmrs (Official Music Video)(720P_HD).mp4" type="video/mp4">
+  </video>
+</body>
+</html>
+```
 
 # CSS
