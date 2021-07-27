@@ -98,15 +98,15 @@ Las etiquetas dobles "a" son para poner un link;  pones "href = "" " y en las co
 </html>
 ```
 
-Las etiquetas dobles "img" son para insertar imágenes, con src (source) buscas el link o la ubicación de las imágenes para insertarlas, con width pones el ancho, con height el alto, alt permite proporcionar un texto equivalente al objeto y aligh la posicion.  
-Las etiquetas dobles "ol" son para hacer una lista númerica.  
-Las etiquetas dobles "li" son para insertar items en la lista.  
-Las etiquetas dobles "ul" son para hacer una lista de puntos.  
-Las etiquetas dobles "table" son para declarar una tabla después puedes ponerle borde con "border="1"" dentro de la misma etiqueta de inicio.  
-Las etiquetas dobles "tr" son para declarar una fila.  
-Las etiquetas dobles "th" son para poner el valor de una columna.  
-Las etiquetas dobles "meter" son para poner una barra de progreso, en "value" pones el valor, en "min" pones el valor mínimo de los valores posibles, en "max" pones el valor máximo de esos valores, en "high" pones un valor donde pones un limite que por ejemplo si fueran calificaciones el valor limite para pasar es de 70 para arriba".  
-Las etiquetas dobles "footer" son para poner el pie de página.  
+**img:** Etiqueta doble para insertar imágenes, con src (source) buscas el link o la ubicación de las imágenes para insertarlas, con width pones el ancho, con height el alto, alt permite proporcionar un texto equivalente al objeto y aligh la posicion.  
+**ol:** Etiqueta doble para hacer una lista númerica.  
+**li:** Etiqueta doble para insertar items en la lista.  
+**ul:** Etiqueta doble para hacer una lista de puntos.  
+**table:** Etiqueta doble para declarar una tabla después puedes ponerle borde con "border="1"" dentro de la misma etiqueta de inicio.  
+**tr:** Etiqueta doble para declarar una fila.  
+**th:** Etiqueta doble para poner el valor de una columna.  
+**meter:** Etiqueta doble para poner una barra de progreso, en "value" pones el valor, en "min" pones el valor mínimo de los valores posibles, en "max" pones el valor máximo de esos valores, en "high" pones un valor donde pones un limite que por ejemplo si fueran calificaciones el valor limite para pasar es de 70 para arriba".  
+**footer** Etiqueta doble para poner el pie de página.  
 ```html
 <!doctype html>
 <html>
@@ -287,5 +287,69 @@ Nos va a permitir insertar o incrustar documentos HTML, un vídeo en línea, un 
 
 En HTML5 podemos crear formularios para que las personas puyedan registrarse, puedan enviar sus dudas, puedan escribir comentarios y puedan interartuar ccon el creador de la página.
 
-**form:** Etiqueta doble que se usa para los formularios
+**center:** Etiqueta doble que se usa para centrar las cosas.  
+**form:** Etiqueta doble que se usa para los formularios.  
+```html
+<!doctype html>
+<html>
+<head>
+  <meta charset = "utf-8">
+</head>
+
+<body>
+  <center>
+    <form>
+      <label for="texto">Entrada de texto</label>
+      <input id="texto" type = "text" placeholder = "Entrada de texto" value = "" required>
+      <!--readonly-->
+
+      <br>
+      <br>
+
+      <label for="correo">Entrada de correo</label>
+      <input id="correo" type = "email" placeholder = "Entrada de correo" value = "" required>
+
+      <br>
+      <br>
+
+      <label for="pass">Entrada de contraseña</label>
+      <input id="pass" type = "password" placeholder = "Entrada de contraseña" value = "" required>
+
+      <br>
+      <br>
+
+      <label for="numero">Entrada de números</label>
+      <input id="numero" type = "number" value="0" min="-1" max="5">
+
+      <br>
+      <br>
+
+      <select>
+        <option>Opcion 1</option>
+        <option>Opcion 2</option>
+        <option>Opcion 3</option>
+      </select>
+
+      <br>
+      <br>
+
+      <input type="checkbox" id="rojo"><label for="rojo">Rojo</label>
+      <input type="checkbox" id="amarillo"><label for="amarillo">Amarillo</label>
+      <input type="checkbox" id="verde"><label for="verde">Verde</label>
+
+      <br>
+      <br>
+
+      <input type="radio" id="blanco" name="radio" checked><label for="blanco">Blanco</label>
+      <input type="radio" id="negro" name="radio"><label for="negro">Negro</label>
+
+      <br>
+      <br>
+
+      <input type="submit" value="Enviar formulario">
+    </form>
+  </center>
+</body>
+</html>
+```
 # CSS
