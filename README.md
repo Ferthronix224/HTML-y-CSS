@@ -283,5 +283,9 @@ Nos va a permitir insertar o incrustar documentos HTML, un vídeo en línea, un 
 </body>
 </html>
 ```
+# Etiqueta Formulario
 
+En HTML5 podemos crear formularios para que las personas puyedan registrarse, puedan enviar sus dudas, puedan escribir comentarios y puedan interartuar ccon el creador de la página.
+
+**form:** Etiqueta doble que se usa para los formularios
 # CSS
