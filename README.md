@@ -353,3 +353,38 @@ En HTML5 podemos crear formularios para que las personas puyedan registrarse, pu
 </html>
 ```
 # CSS
+
+## Propiedades de forma
+ˋˋˋhtml
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Propiedades de forma</title>
+    <style>
+      .grupo{
+       width:200px;
+       height:200px;
+       margin:20px;
+      } 
+      
+      #c1{
+      background:magenta;
+      } 
+      
+      #c2{
+      background:#C70039;
+      } 
+
+      #c3{
+      background:rgba(2, 2, 2, 1);
+      } 
+    </style>
+  </head>
+  <body>
+    <div id="c1" class="grupo"></div>
+    <div id="c2" class="grupo"></div>
+    <div id="c3" class="grupo"></div>
+  </body>
+</html>
+ˋˋˋ
