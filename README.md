@@ -355,7 +355,7 @@ En HTML5 podemos crear formularios para que las personas puyedan registrarse, pu
 # CSS
 
 ## Propiedades de forma
-ˋˋˋhtml
+```html
 <!doctype html>
 <html>
   <head>
@@ -387,4 +387,4 @@ En HTML5 podemos crear formularios para que las personas puyedan registrarse, pu
     <div id="c3" class="grupo"></div>
   </body>
 </html>
-ˋˋˋ
+```
