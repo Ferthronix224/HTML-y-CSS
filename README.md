@@ -533,9 +533,9 @@ Hay 3 maneras de configurar colores en HTML que viene siendo por nombre, por col
       <!--Inicia el cabezote-->
       <header>
          <div id="logo"></div>
-         <div id="icono1""></div>
-         <div id="icono2""></div>
-         <div id="icono3""></div>
+         <div id="icono1"></div>
+         <div id="icono2"></div>
+         <div id="icono3"></div>
       </header>
       <!-- Cierra Cabezote -->
       <!-- Inicia Barra de Navegación -->
@@ -571,4 +571,240 @@ Hay 3 maneras de configurar colores en HTML que viene siendo por nombre, por col
    </body>
 </html>
 
+```
+Es importante aclarar el uso de las margenes.  
+Tenemos varias opciones de colocar margenes a una caja en posicion relativa.  
+
+margin: auto -> Significa que sus margenes van a dar una respuesta automatica en el flujo de nudos y se ubique dentro en la pantalla en la parte central a nivel lateral y en la parte superior de la pantalla.  
+Las margenes las podemos ubicar de acuerdo a las 4 margenes en donde esta posicionada la caja. Las cuales son:  
+- top (Arriba)
+- right (Derecha)
+- bottom (Abajo)
+- left (Izquierda)  
+
+Ejemplo: "margin: 20px 30px 40px 50px"
+
+# Propiedades de Ubicacion Parte 2
+
+```html
+<!doctype>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <title>Propiedades de ubicacion</title>
+   </head>
+   <style>
+      *{
+      margin:0;
+      padding:0;
+      list-style:none;
+      }
+      header{
+      position:relative;
+      margin:20px auto;
+      width:1000px;
+      height:120px;
+      background:#444;
+      }
+      nav{
+      position:relative;
+      margin:auto;
+      width:1000px;
+      height:48px;
+      background:#aaa;
+      }
+      #top{
+        position:relative;
+        margin:20px auto;
+        width:1000px;
+        height:192px;
+        background:#888;
+      }
+      section{
+      position:relative;
+      margin:auto;
+      width:1000px;
+      height:453px;
+      background:#aaa;
+      }
+      footer{
+        position:relative;
+        margin:20px auto;
+        width:1000px;
+        height:70px;
+        background:#888;
+      }
+      }
+   </style>
+   <body>
+      <!--Inicia el cabezote-->
+      <header>
+         <div id="logo"></div>
+         <div id="icono1"></div>
+         <div id="icono2"></div>
+         <div id="icono3"></div>
+      </header>
+      <!-- Cierra Cabezote -->
+      <!-- Inicia Barra de Navegación -->
+      <nav>
+         <ul>
+            <li class="botones"></li>
+            <li class="botones"></li>
+            <li class="botones"></li>
+            <li class="botones"></li>
+            <li class="botones"></li>
+         </ul>
+      </nav>
+      <!-- Cierra Barra de Navegación -->
+      <!--  Inicia parte Superior -->
+      <div id="top">
+         <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+         </ul>
+      </div>
+      <!-- Cierra parte Superior -->
+      <!-- Inicia Seccion -->
+      <section>
+         <aside id="izq"></aside>
+         <article></article>
+         <aside id="der"></aside>
+      </section>
+      <!-- Cierre Sección -- >
+         <!-- Inicia pie de pagina -->
+      <footer></footer>
+      <!-- Cierra pie de pagina -->
+   </body>
+</html>
+
+```
+
+# Propiedades de Ubicación Parte 3
+
+````html
+<!doctype>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <title>Propiedades de ubicacion</title>
+   </head>
+   <style>
+      *{
+      margin:0;
+      padding:0;
+      list-style:none;
+      }
+      header{
+      position:relative;
+      margin:20px auto;
+      width:1000px;
+      height:120px;
+      background:#444;
+      }
+      #logo{
+        position:absolute;
+        top:30px;
+        left:30px;
+        width:200px;
+        height:60px;
+        background:#ccc;
+      }
+      .redes{
+        position: absolute;
+        width: 42px;
+        height: 42px;
+        background: #ccc;
+        border-radius: 100%;
+      }
+      #icono1{
+        top:42px;
+        right: 120px;
+      }
+      #icono2{
+        top:42px;
+        right: 74px;
+      }
+      #icono3{
+        top:42px;
+        right: 19px;
+      }
+      nav{
+      position:relative;
+      margin:auto;
+      width:1000px;
+      height:48px;
+      background:#aaa;
+      }
+      .botones{
+        float:left;
+        width: 196px;
+        height: 48px;
+        background: #333;
+        margin: 0px 2px;
+      }
+      #top{
+        position:relative;
+        margin:20px auto;
+        width:1000px;
+        height:192px;
+        background:#888;
+      }
+      section{
+      position:relative;
+      margin:auto;
+      width:1000px;
+      height:453px;
+      background:#aaa;
+      }
+      footer{
+        position:relative;
+        margin:20px auto;
+        width:1000px;
+        height:70px;
+        background:#888;
+      }
+      }
+   </style>
+   <body>
+      <!--Inicia el cabezote-->
+      <header>
+         <div id="logo"></div>
+         <div id="icono1" class="redes"></div>
+         <div id="icono2" class="redes"></div>
+         <div id="icono3" class="redes"></div>
+      </header>
+      <!-- Cierra Cabezote -->
+      <!-- Inicia Barra de Navegación -->
+      <nav>
+         <ul>
+            <li class="botones"></li>
+            <li class="botones"></li>
+            <li class="botones"></li>
+            <li class="botones"></li>
+            <li class="botones"></li>
+         </ul>
+      </nav>
+      <!-- Cierra Barra de Navegación -->
+      <!--  Inicia parte Superior -->
+      <div id="top">
+         <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+         </ul>
+      </div>
+      <!-- Cierra parte Superior -->
+      <!-- Inicia Seccion -->
+      <section>
+         <aside id="izq"></aside>
+         <article></article>
+         <aside id="der"></aside>
+      </section>
+      <!-- Cierre Sección -- >
+         <!-- Inicia pie de pagina -->
+      <footer></footer>
+      <!-- Cierra pie de pagina -->
+   </body>
+</html>
 ```
