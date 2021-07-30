@@ -418,7 +418,15 @@ Hay 3 maneras de usar el CSS que viene siendo a traves de las etiquetas, mis id'
 ```
 
 # Propiedades de Forma
+**width:** Ancho.  
+**height:** Alto.  
+**background:** Color.  
+**margin:** La propiedad margin establece los márgenes de un elemento especificando entre uno y cuatro valores, donde cada valor es una longitud, un porcentaje o auto. Los valores en porcentaje se refieren al ancho del elemento padre. Se permiten márgenes negativos.
 
+Si se dan cuatro valores, se aplican a los márgenes superior, derecho, inferior e izquierdo, respectivamente. Si se da un valor, se aplica a todos los lados. Si se dan dos o tres valores, los valores faltantes se toman del lado opuesto.  
+**border:** La propiedad border permite definir de golpe todos los bordes en una única regla de la hoja de estilos. Se puede utilizar border para definir el o los valores siguientes: border-width, border-style, border-color.  
+**padding:**El área de padding es el espacio entre el contenido del elemento y su borde ( border ). No se permiten valores negativos. La propiedad padding es un atajo para evitar la asignación de cada lado por separado.  
+**border-radius:** Permite especificar el redondeo de todas las esquinas de una caja CSS y definir la forma en que se debe hacer. Todos los elementos. inherit (se heredan las características del elemento padre).  
 ```html
 <!DOCTYPE html>
 <html>
@@ -454,7 +462,9 @@ Hay 3 maneras de usar el CSS que viene siendo a traves de las etiquetas, mis id'
 
 ```
 
-## Propiedades de color
+## Propiedades de color  
+
+Hay 3 maneras de configurar colores en HTML que viene siendo por nombre, por color hexadecimal y por RGBA.
 ```html
 <!doctype html>
 <html>
@@ -487,4 +497,78 @@ Hay 3 maneras de usar el CSS que viene siendo a traves de las etiquetas, mis id'
     <div id="c3" class="grupo"></div>
   </body>
 </html>
+```
+# Propiedades de Ubicación Parte 1
+
+```html
+<!doctype>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <title>Propiedades de ubicacion</title>
+   </head>
+   <style>
+      *{
+      margin:0;
+      padding:0;
+      list-style:none;
+      }
+      header{
+      position:relative;
+      margin:auto;
+      width:1000px;
+      height:120px;
+      background:#444;
+      }
+      nav{
+      position:relative;
+      margin:auto;
+      width:1000px;
+      height:48px;
+      background:#aaa;
+      }
+      }
+   </style>
+   <body>
+      <!--Inicia el cabezote-->
+      <header>
+         <div id="logo"></div>
+         <div id="icono1""></div>
+         <div id="icono2""></div>
+         <div id="icono3""></div>
+      </header>
+      <!-- Cierra Cabezote -->
+      <!-- Inicia Barra de Navegación -->
+      <nav>
+         <ul>
+            <li class="botones"></li>
+            <li class="botones"></li>
+            <li class="botones"></li>
+            <li class="botones"></li>
+            <li class="botones"></li>
+         </ul>
+      </nav>
+      <!-- Cierra Barra de Navegación -->
+      <!--  Inicia parte Superior -->
+      <div id="top">
+         <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+         </ul>
+      </div>
+      <!-- Cierra parte Superior -->
+      <!-- Inicia Seccion -->
+      <section>
+         <aside id="izq"></aside>
+         <article></article>
+         <aside id="der"></aside>
+      </section>
+      <!-- Cierre Sección -- >
+         <!-- Inicia pie de pagina -->
+      <footer></footer>
+      <!-- Cierra pie de pagina -->
+   </body>
+</html>
+
 ```
