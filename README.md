@@ -358,6 +358,14 @@ CSS (en inglés Cascading Style Sheets) es lo que se denomina lenguaje de hojas 
 
 # Sintaxis  
 
+**style:** Etiqueta doble que se usa para poner el código del CSS y debe ponerse antes de cerrar el **head**.  
+
+Hay 3 maneras de usar el CSS que viene siendo a traves de las etiquetas, mis id's y las clases/grupos.
+
+**Etiquetas:** Simplemente pones el nombre de la etiqueta y abres llaves.  
+**ID:** Pones un hashtag/gato luego el nombre del ID y abres llaves.  
+**Clases/Grupos:** Pones un punto luego el nombre del grupo y abres llaves.
+
 ```html
 <!DOCTYPE html>
 <html>
@@ -445,8 +453,6 @@ CSS (en inglés Cascading Style Sheets) es lo que se denomina lenguaje de hojas 
 </html>
 
 ```
-
-**style:** Etiqueta doble que se usa para poner el código del CSS y debe ponerse antes de cerrar el **head**.
 
 ## Propiedades de color
 ```html
