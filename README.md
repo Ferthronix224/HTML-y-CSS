@@ -354,31 +354,125 @@ En HTML5 podemos crear formularios para que las personas puyedan registrarse, pu
 ```
 # CSS
 
-## Propiedades de forma
+CSS (en inglés Cascading Style Sheets) es lo que se denomina lenguaje de hojas de estilo en cascada y se usa para estilizar elementos escritos en un lenguaje de marcado como HTML. CSS separa el contenido de la representación visual del sitio.  
+
+# Sintaxis  
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Sintaxis</title>
+
+    <style>
+      /*
+
+      Selector{
+
+        propiedad:valor;
+
+    }
+
+      */
+
+      body{
+
+        background:red;
+
+      }
+
+      #caja{
+        width:200px;
+        height:200px;
+        background:yellow;
+      }
+
+      .grupo{
+        width:200px;
+        height:200px;
+        background:blue;
+        margin:10px;
+      }
+    </style>
+  </head>
+  <body>
+
+    <div id="caja"></div>
+
+    <div class="grupo"></div>
+    <div class="grupo"></div>
+    <div class="grupo"></div>
+
+  </body>
+</html>
+
+```
+
+# Propiedades de Forma
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Propiedades de Forma</title>
+    <style>
+      header{
+        width:1000px;
+        height:200px;
+        background:blue;
+        margin:20px;
+        border:5px solid yellow;
+        padding:20px;
+      }
+
+      #logo{
+        width:100px;
+        height:100px;
+        background:green;
+        margin:20px;
+        border:5px solid white;
+        border-radius:10px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div id="logo">Logotipo</div>
+    </header>
+  </body>
+</html>
+
+```
+
+**style:** Etiqueta doble que se usa para poner el código del CSS y debe ponerse antes de cerrar el **head**.
+
+## Propiedades de color
 ```html
 <!doctype html>
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Propiedades de forma</title>
+    <title>Propiedades de color</title>
     <style>
       .grupo{
        width:200px;
        height:200px;
        margin:20px;
-      } 
-      
+      }
+
       #c1{
       background:magenta;
-      } 
-      
+      }
+
       #c2{
       background:#C70039;
-      } 
+      }
 
       #c3{
       background:rgba(2, 2, 2, 1);
-      } 
+      }
     </style>
   </head>
   <body>
