@@ -1927,3 +1927,311 @@ Pagina para buscar fuentes: https://fonts.google.com
    </body>
 </html>
 ```
+# Propiedades de Enlace
+
+````html
+<!doctype>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <title>Propiedades de ubicacion</title>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200&display=swap" rel="stylesheet">
+  <link href="estilo.css" type="text/css" rel="stylesheet" media="">
+   </head>
+
+   <body>
+     <div id="chat">Chat</div>
+      <!--Inicia el cabezote-->
+      <header>
+         <div id="logo">Logotipo</div>
+
+         <div id="icono1" class="redes">X</div>
+         <div id="icono2" class="redes">X</div>
+         <div id="icono3" class="redes">X</div>
+      </header>
+      <!-- Cierra Cabezote -->
+      <!-- Inicia Barra de Navegación -->
+      <nav>
+         <ul>
+            <a href="#"><li class="botones">Boton 1</li></a>
+            <a href="#"><li class="botones">Boton 2</li></a>
+            <a href="#"><li class="botones">Boton 3</li></a>
+            <a href="#"><li class="botones">Boton 4</li></a>
+            <a href="#"><li class="botones">Boton 5</li></a>
+         </ul>
+      </nav>
+      <!-- Cierra Barra de Navegación -->
+      <!--  Inicia parte Superior -->
+      <div id="top">
+         <ul>
+            <li>
+              <img src="img/1.jpg" height="100px" width="100px">
+              <h1>Algo</h1>
+              <p>lklcsajls lkcslajsclj</p>
+            </li>
+            <li>
+              <img src="img/2.jpg" height="100px" width="100px">
+              <h1>Algo</h1>
+              <p>lklcsajls lkcslajsclj</p>
+            </li>
+            <li>
+              <img src="img/3.jpg" height="100px" width="100px">
+              <h1>Algo</h1>
+              <p>lklcsajls lkcslajsclj</p>
+            </li>
+         </ul>
+      </div>
+      <!-- Cierra parte Superior -->
+      <!-- Inicia Seccion -->
+      <section>
+         <aside id="izq">
+           <ul>
+          <li><a href="#">Link 1</li></a>
+          <li><a href="#">Link 2</li></a>
+          <li><a href="#">Link 3</li></a>
+          <li><a href="#">Link 4</li></a>
+           </ul>
+         </aside>
+         <article>
+           <h1>Fierro pariente</h1>
+           <p><img src="img/1.jpg" height="100px" width="100px">There’s no more horrific sound than the screams of a mother who has just lost her child. Those were the sounds that awoke me in the middle of the night when the neighbor's boy passed away during the night. Officially he died from an undiagnosed, hereditary heart condition, but the rumors told another story entirely.
+           </p>
+           <br>
+           <p>Mary had always been a big part of our community, arranging barbecues and birthday parties, getting along with each and everyone in the neighborhood. All while being a working, single mother. Her son, Ulrich, was the most lively boy, outgoing and smart. We all expected big things from him as he grew up, and he loved the attention.
+           </p>
+         </article>
+         <aside id="der">
+           <h1>Ingreso</h1>
+
+           <form>
+             <input type="text" placeholder="Nombre">
+
+             <input type="password" placeholder="Contraseña">
+
+             <input type="submit" value="Enviar">
+           </form>
+         </aside>
+      </section>
+      <!-- Cierre Sección -- >
+         <!-- Inicia pie de pagina -->
+      <footer>
+        &copy; Todos los derechos reservados.
+        <!--http://www.ascii.cl/htmlcodes.htm-->
+      </footer>
+      <!-- Cierra pie de pagina -->
+   </body>
+</html>
+```
+## CSS del codigo anterior
+```css
+*{
+     margin:0;
+     padding:0;
+     list-style:none;
+     font-family: 'Source Code Pro', monospace;
+}
+ #chat{
+     position:fixed;
+     width:250px;
+     height:40px;
+     background: magenta;
+     bottom:0;
+     right:20px;
+     z-index:1;
+     color:white;
+     text-align:center;
+     line-height:40px;
+     font-family: 'Source Code Pro', monospace;
+     font-size:20px;
+     border-radius:20px 20px 0 0;
+     cursor:pointer;
+}
+ header{
+     position:relative;
+     margin:20px auto;
+     width:1000px;
+     height:120px;
+}
+ #logo{
+     position:absolute;
+     top:30px;
+     left:30px;
+     width:200px;
+     height:60px;
+     font-family: 'Pacifico', cursive;
+     font-size: 50px;
+     text-align: center;
+     line-height: 60px;
+}
+ .redes{
+     position: absolute;
+     width: 42px;
+     height: 42px;
+     background: #ccc;
+     border-radius: 100%;
+     text-align: center;
+     line-height: 42px;
+     color: white;
+}
+ #icono1{
+     top:42px;
+     right: 120px;
+     background: blue;
+}
+ #icono2{
+     top:42px;
+     right: 74px;
+     background: green;
+}
+ #icono3{
+     top:42px;
+     right: 19px;
+     background: red;
+}
+ nav{
+     position:relative;
+     margin:auto;
+     width:1000px;
+     height:48px;
+     background:#aaa;
+}
+ .botones{
+     float:left;
+     width: 196px;
+     height: 48px;
+     background: rgba(100,0,255,1);
+     margin: 0px 2px;
+     font-family: 'Pacifico', cursive;
+     color: white;
+     text-align: center;
+     line-height: 48px;
+}
+ a .botones:hover{
+     background:rgba(100,0,255,.4);
+}
+ a .botones:active{
+     background:rgba(255,0,100,1);
+}
+ #top{
+     position:relative;
+     margin:20px auto;
+     width:1000px;
+     height:192px;
+}
+ #top ul{
+     width: 1010px;
+     height: 192px;
+}
+ #top ul li{
+     float:left;
+     width: 326px;
+     height: 192px;
+     margin-right: 10px;
+     text-align: center;
+}
+ #top ul li img{
+     border-radius: 100%;
+     height: 100px;
+}
+ #top ul li h1{
+     font-family: 'Pacifico', cursive;
+}
+ #top ul li p{
+     font-size: 14px;
+     margin: 10px;
+}
+ section{
+     position:relative;
+     margin:auto;
+     width:1000px;
+     height:453px;
+}
+ aside#izq{
+     position: absolute;
+     left: 0;
+     top:0;
+     width: 200px;
+     height: 453px;
+}
+ aside#izq ul li{
+     background:#aaa;
+     padding:10px;
+     margin:2px 10px;
+     list-style:square;
+     list-style-position:inside;
+}
+ aside#izq ul li a{
+     text-decoration:none;
+}
+ article{
+     position: absolute;
+     left: 200px;
+     top:0;
+     width: 600px;
+     height: 453px;
+}
+ article h1{
+     font-family: 'Pacifico', cursive;
+     font-size: 40px;
+     margin:20px;
+}
+ article p{
+     margin: 5px 20px;
+     font-size: 14px;
+     text-align: justify;
+}
+ article p img{
+     float: left;
+     margin-right: 20px;
+}
+ aside#der{
+     position: absolute;
+     right: 0;
+     top:0;
+     width: 200px;
+     height: 453px;
+}
+ aside#der h1{
+     width:200px;
+     height:50px;
+     line-height:50px;
+     text-align:center;
+     background: rgba(100,0,255,1);
+     color:white;
+     margin-bottom:5px;
+}
+ aside#der input{
+     padding:10px;
+     margin:5px 0;
+     width:176px;
+}
+ aside#der input[type="text"]{
+     background:url(img/usuario.jpg);
+     background-repeat:no-repeat;
+     background-position:right;
+     background-size:contain;
+}
+ aside#der input[type="password"]{
+     background:url(img/password.png);
+     background-repeat:no-repeat;
+     background-position:right;
+     background-size:contain;
+}
+ footer{
+     position:relative;
+     margin:20px auto;
+     width:1000px;
+     height:70px;
+     text-align: center;
+     line-height: 70px;
+     color: white;
+     background: rgba(100,0,255,1);
+}
+	} 
+```
