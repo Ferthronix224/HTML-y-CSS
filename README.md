@@ -808,3 +808,166 @@ Ejemplo: "margin: 20px 30px 40px 50px"
    </body>
 </html>
 ```
+# Propiedades de Ubicacion Parte 4
+
+```html
+<!doctype>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <title>Propiedades de ubicacion</title>
+   </head>
+   <style>
+      *{
+      margin:0;
+      padding:0;
+      list-style:none;
+      }
+      header{
+      position:relative;
+      margin:20px auto;
+      width:1000px;
+      height:120px;
+      background:#444;
+      }
+      #logo{
+        position:absolute;
+        top:30px;
+        left:30px;
+        width:200px;
+        height:60px;
+        background:#ccc;
+      }
+      .redes{
+        position: absolute;
+        width: 42px;
+        height: 42px;
+        background: #ccc;
+        border-radius: 100%;
+      }
+      #icono1{
+        top:42px;
+        right: 120px;
+      }
+      #icono2{
+        top:42px;
+        right: 74px;
+      }
+      #icono3{
+        top:42px;
+        right: 19px;
+      }
+      nav{
+      position:relative;
+      margin:auto;
+      width:1000px;
+      height:48px;
+      background:#aaa;
+      }
+      .botones{
+        float:left;
+        width: 196px;
+        height: 48px;
+        background: #333;
+        margin: 0px 2px;
+      }
+      #top{
+        position:relative;
+        margin:20px auto;
+        width:1000px;
+        height:192px;
+      }
+      #top ul{
+        width: 1010px;
+        height: 192px;
+      }
+      #top ul li{
+        float:left;
+        width: 326px;
+        height: 192px;
+        background: black;
+        margin-right: 10px;
+      }
+      section{
+      position:relative;
+      margin:auto;
+      width:1000px;
+      height:453px;
+      background:#aaa;
+      }
+      aside#izq{
+        position: absolute;
+        left: 0;
+        top:0;
+        width: 200px;
+        height: 453px;
+        background: #333;
+      }
+      article{
+        position: absolute;
+        left: 200px;
+        top:0;
+        width: 600px;
+        height: 453px;
+        background: #667;
+      }
+      aside#der{
+        position: absolute;
+        right: 0;
+        top:0;
+        width: 200px;
+        height: 453px;
+        background: #333;
+      }
+      footer{
+        position:relative;
+        margin:20px auto;
+        width:1000px;
+        height:70px;
+        background:#888;
+      }
+      }
+   </style>
+   <body>
+      <!--Inicia el cabezote-->
+      <header>
+         <div id="logo"></div>
+
+         <div id="icono1" class="redes"></div>
+         <div id="icono2" class="redes"></div>
+         <div id="icono3" class="redes"></div>
+      </header>
+      <!-- Cierra Cabezote -->
+      <!-- Inicia Barra de Navegación -->
+      <nav>
+         <ul>
+            <li class="botones"></li>
+            <li class="botones"></li>
+            <li class="botones"></li>
+            <li class="botones"></li>
+            <li class="botones"></li>
+         </ul>
+      </nav>
+      <!-- Cierra Barra de Navegación -->
+      <!--  Inicia parte Superior -->
+      <div id="top">
+         <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+         </ul>
+      </div>
+      <!-- Cierra parte Superior -->
+      <!-- Inicia Seccion -->
+      <section>
+         <aside id="izq"></aside>
+         <article></article>
+         <aside id="der"></aside>
+      </section>
+      <!-- Cierre Sección -- >
+         <!-- Inicia pie de pagina -->
+      <footer></footer>
+      <!-- Cierra pie de pagina -->
+   </body>
+</html>
+```
