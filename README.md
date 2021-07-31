@@ -971,3 +971,206 @@ Ejemplo: "margin: 20px 30px 40px 50px"
    </body>
 </html>
 ```
+Pagina para buscar fuentes: https://fonts.google.com
+```html
+<!doctype>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <title>Propiedades de ubicacion</title>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200&display=swap" rel="stylesheet">
+   </head>
+   <style>
+      *{
+      margin:0;
+      padding:0;
+      list-style:none;
+      font-family: 'Source Code Pro', monospace;
+      }
+      header{
+      position:relative;
+      margin:20px auto;
+      width:1000px;
+      height:120px;
+      }
+      #logo{
+        position:absolute;
+        top:30px;
+        left:30px;
+        width:200px;
+        height:60px;
+        font-family: 'Pacifico', cursive;
+        font-size: 50px;
+        text-align: center;
+        line-height: 60px;
+      }
+      .redes{
+        position: absolute;
+        width: 42px;
+        height: 42px;
+        background: #ccc;
+        border-radius: 100%;
+        text-align: center;
+        line-height: 42px;
+        color: white;
+      }
+      #icono1{
+        top:42px;
+        right: 120px;
+        background: blue;
+      }
+      #icono2{
+        top:42px;
+        right: 74px;
+        background: green;
+      }
+      #icono3{
+        top:42px;
+        right: 19px;
+        background: red;
+      }
+      nav{
+      position:relative;
+      margin:auto;
+      width:1000px;
+      height:48px;
+      background:#aaa;
+      }
+      .botones{
+        float:left;
+        width: 196px;
+        height: 48px;
+        background: rgba(100,0,255,1);
+        margin: 0px 2px;
+        font-family: 'Pacifico', cursive;
+        color: white;
+        text-align: center;
+        line-height: 48px;
+      }
+      #top{
+        position:relative;
+        margin:20px auto;
+        width:1000px;
+        height:192px;
+      }
+      #top ul{
+        width: 1010px;
+        height: 192px;
+      }
+      #top ul li{
+        float:left;
+        width: 326px;
+        height: 192px;
+        background: gray;
+        margin-right: 10px;
+      }
+      section{
+      position:relative;
+      margin:auto;
+      width:1000px;
+      height:453px;
+      background:#aaa;
+      }
+      aside#izq{
+        position: absolute;
+        left: 0;
+        top:0;
+        width: 200px;
+        height: 453px;
+        background: #333;
+      }
+      article{
+        position: absolute;
+        left: 200px;
+        top:0;
+        width: 600px;
+        height: 453px;
+        background: #667;
+      }
+      aside#der{
+        position: absolute;
+        right: 0;
+        top:0;
+        width: 200px;
+        height: 453px;
+        background: #333;
+      }
+      footer{
+        position:relative;
+        margin:20px auto;
+        width:1000px;
+        height:70px;
+        background:#888;
+      }
+      }
+   </style>
+   <body>
+      <!--Inicia el cabezote-->
+      <header>
+         <div id="logo">Logotipo</div>
+
+         <div id="icono1" class="redes">X</div>
+         <div id="icono2" class="redes">X</div>
+         <div id="icono3" class="redes">X</div>
+      </header>
+      <!-- Cierra Cabezote -->
+      <!-- Inicia Barra de Navegación -->
+      <nav>
+         <ul>
+            <li class="botones">Boton 1</li>
+            <li class="botones">Boton 2</li>
+            <li class="botones">Boton 3</li>
+            <li class="botones">Boton 4</li>
+            <li class="botones">Boton 5</li>
+         </ul>
+      </nav>
+      <!-- Cierra Barra de Navegación -->
+      <!--  Inicia parte Superior -->
+      <div id="top">
+         <ul>
+            <li>
+              <img src="img/1.jpg" height="100px" width="100px">
+              <h1>Algo</h1>
+              <p>lklcsajls lkcslajsclj</p>
+            </li>
+            <li>
+              <img src="img/2.jpg" height="100px" width="100px">
+              <h1>Algo</h1>
+              <p>lklcsajls lkcslajsclj</p>
+            </li>
+            <li>
+              <img src="img/3.jpg" height="100px" width="100px">
+              <h1>Algo</h1>
+              <p>lklcsajls lkcslajsclj</p>
+            </li>
+         </ul>
+      </div>
+      <!-- Cierra parte Superior -->
+      <!-- Inicia Seccion -->
+      <section>
+         <aside id="izq"></aside>
+         <article>
+           <h1>Fierro pariente</h1>
+           <p><img src="img/1.jpg" height="100px" width="100px">There’s no more horrific sound than the screams of a mother who has just lost her child. Those were the sounds that awoke me in the middle of the night when the neighbor's boy passed away during the night. Officially he died from an undiagnosed, hereditary heart condition, but the rumors told another story entirely.
+           </p>
+           <br>
+           <p>Mary had always been a big part of our community, arranging barbecues and birthday parties, getting along with each and everyone in the neighborhood. All while being a working, single mother. Her son, Ulrich, was the most lively boy, outgoing and smart. We all expected big things from him as he grew up, and he loved the attention.
+           </p>
+         </article>
+         <aside id="der"></aside>
+      </section>
+      <!-- Cierre Sección -- >
+         <!-- Inicia pie de pagina -->
+      <footer>
+        &copy; Todos los derechos reservados.
+      </footer>
+      <!-- Cierra pie de pagina -->
+   </body>
+</html>
+```
