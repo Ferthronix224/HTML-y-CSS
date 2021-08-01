@@ -2449,4 +2449,8 @@ Para solucionar esto, los navegadores de esos dispositivos redujeron la pagina w
 
 Consulta de medios es una tecnica CSS introducida en CSS3.
 
-Utliza la regla @media para incluir un bloque de propiedades de CSS solo si una determinada condicion es verdadera.
+Utliza la regla @media para incluir un bloque de propiedades de CSS solo si una determinada condicion es verdadera.  
+
+Una cosa que es muy util en Sublime Text es que puedo escribir la misma palabra en varios renglones al mismo tiempo con oprimir la tecla Ctrl en las partes donde quiera.  
+
+Y si quiero cambiar esas palabras, debo de seleccionar una y luego oprimir Ctrl + D para que se vayan seleccionando las mismas palabras que le siguen.
