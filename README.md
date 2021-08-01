@@ -2263,3 +2263,185 @@ Para solucionar esto, los navegadores de esos dispositivos redujeron la pagina w
 </body>
 </html>
 ```
+# Sistema de Filas y columnas
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="css/columnas.css">
+</head>
+<body>
+	<div class="contenedor">
+
+		<div class="fila">
+
+			<div class="col-12">100%</div>
+
+		</div>
+
+		<div class="fila">
+
+			<div class="col-6">50%</div>
+			<div class="col-6">50%</div>
+
+		</div>
+
+		<div class="fila">
+
+			<div class="col-4">33.33333333%</div>
+			<div class="col-4">33.33333333%</div>
+			<div class="col-4">33.33333333%</div>
+
+		</div>
+
+		<div class="fila">
+
+			<div class="col-3">25%</div>
+			<div class="col-3">25%</div>
+			<div class="col-3">25%</div>
+			<div class="col-3">25%</div>
+
+		</div>
+
+		<div class="fila">
+
+			<div class="col-3">25%</div>
+			<div class="col-9">75%</div>
+
+		</div>
+
+		<div class="fila">
+
+			<div class="col-7">58.33%</div>
+			<div class="col-5">41.67%</div>
+
+		</div>
+
+		<div class="fila">
+
+			<div class="col-8">66.67%</div>
+			<div class="col-2">16.66%</div>
+			<div class="col-1">8.33%</div>
+			<div class="col-1">8.33%</div>
+		</div>
+
+		<div class="fila">
+
+			<div class="col-3">25%</div>
+			<div class="col-3">25%</div>
+			<div class="col-3">25%</div>
+
+		</div>
+
+		<div class="fila" style="background: red">
+
+			<div class="col-3">25%</div>
+			<div class="col-3">25%</div>
+			<div class="col-3">25%</div>
+
+		</div>
+
+		<h1>Hello</h1>
+	</div>
+</body>
+</html>
+```
+# CSS de Sistema de Filas y columnas
+```css
+
+*{
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+	text-decoration: none;
+	font-family: sans-serif;
+	box-sizing: border-box;/*Esto asegura que el relleno y el borde estan incluidos en el ancho total y la altura de las cajas html.*/
+}
+
+.contenedor{
+	position: relative;
+	margin: auto;
+	width: 100%;
+	height: auto;
+}
+
+.fila{
+	position: relative;
+	margin: auto;
+	width: 100%;
+	height: auto;
+	/*Las columnas dentro de una fila estan flotando a la izquierda, y por lo tanto se toman fuera del flujo de la pagina , y otros elementos seran colocados en como si no fueran de las columnas. Para evitar esto, vamos añadir un estilo que despeja el flujo.*/
+	clear: both;
+	display: table;
+}
+
+[class*="col-"]{
+	float: left;
+	border: 1px solid black;
+	padding: 20px;
+}
+
+.col-12{
+	width: 100%;
+	background: red;
+}
+
+.col-11{
+	width: 91.66666666%;
+	background: purple;
+}
+
+.col-10{
+	width: 83.33333333%;
+	background: red;
+}
+
+.col-9{
+	width: 75%;
+	background: hotpink;
+}
+
+.col-8{
+	width: 66.66666667%;
+	background: skyblue;
+}
+
+.col-7{
+	width: 58.33333333%;
+	background: skyblue;
+}
+
+.col-6{
+	width: 50%;
+	background: skyblue;
+}
+
+.col-5{
+	width: 41.66666667%;
+	background: skyblue;
+}
+
+.col-4{
+	width: 33.33333333%;
+	background: greenyellow;
+}
+
+.col-3{
+	width: 25%;
+	background: darkred;
+}
+
+.col-2{
+	width: 16.66666666%;
+	background: darkred;
+}
+
+.col-1{
+	width: 8.33333333%;
+	background: darkred;
+}
+```
