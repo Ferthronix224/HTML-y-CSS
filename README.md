@@ -2233,5 +2233,33 @@ Pagina para buscar fuentes: https://fonts.google.com
      color: white;
      background: rgba(100,0,255,1);
 }
-	} 
+	}
+```
+La vista de una pagina web varia con el dispositivo y sera menor en un telefono movil que en una pantalla de computadora.
+
+Antes de las tabletas y telefonos moviles, las paginas web estaban diseñadas solo para pantallas de ordenador, y era comun que las paginas web tuvieran un diseño estatico y un tamañp fijo. Luego, cuando comenzamos a navegar por internet usando tabletas y telefonos moviles, las paginas web de tamaño fijo eran demasiado grandes para adaptarse a la ventana grafica.
+
+Para solucionar esto, los navegadores de esos dispositivos redujeron la pagina web entera para ajustarla a la pantalla.  
+
+# Etiqueta Meta Viewport
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- el viewport(ventanza de visualizacion) el area visible del usuario de una pagina web. -->
+
+	<!-- width=devide-width establece el ancho de la pagina para seguir el ancho de pantalla del dispositivo (que variara en funcion del dispositivo) -->
+
+	<!-- initial-scale=1.0 fija el nivel del zoom inicial cuando la pagina se carga por primera vez por el navegador. -->
+
+	<title>Document</title>
+</head>
+<body>
+
+</body>
+</html>
 ```
