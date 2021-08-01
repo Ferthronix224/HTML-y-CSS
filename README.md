@@ -2445,3 +2445,8 @@ Para solucionar esto, los navegadores de esos dispositivos redujeron la pagina w
 	background: darkred;
 }
 ```
+# Media Query CSS (Consulta de Medios)
+
+Consulta de medios es una tecnica CSS introducida en CSS3.
+
+Utliza la regla @media para incluir un bloque de propiedades de CSS solo si una determinada condicion es verdadera.
